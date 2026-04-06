@@ -900,12 +900,20 @@
 
       body { background: white; }
 
+      /* ── Critical: reset overflow so detail pages aren't clipped ── */
+      html, body {
+        overflow: visible !important;
+        height: auto !important;
+      }
+
       .main {
         padding: 0 !important;
         display: block !important;
         width: 100% !important;
         max-width: 100% !important;
         box-sizing: border-box;
+        overflow: visible !important;
+        height: auto !important;
       }
 
       .panel {
